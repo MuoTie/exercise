@@ -1,4 +1,4 @@
-package com.itheima;
+package com.exercise;
 
 import java.util.Arrays;
 import java.util.Random;
