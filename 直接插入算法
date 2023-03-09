@@ -1,0 +1,25 @@
+public class zhijiecharusuanfa {
+    public static void main(String[] args) {
+        int[] nums = {23,12,31,4,55,45};
+        int len = nums.length;
+        int j = 0;
+        for (int i = 1; i < len; i++) {
+            int temp = nums[i];
+            for ( j = i-1; j >=0 ; j--) {
+                if(nums[j] > temp){
+                    nums[j+1] = nums[j];
+                }else {
+                    break;
+                }
+            }
+
+            if(nums[j+1]!= temp){
+                nums[j+1] = temp;
+            }
+        }
+        for (int x:nums) {
+            System.out.print(x + " ");
+        }
+
+    }
+}
