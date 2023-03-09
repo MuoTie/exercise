@@ -1,0 +1,19 @@
+public class maopaosuansa {
+    public static void main(String[] args) {
+        int[] nums = {34,45,12,32,66};
+        int len = nums.length;
+        for (int i = 0; i < len-1; i++) {
+            for (int j = 0; j < len-1-i; j++) {
+                if (nums[j]>nums[j+1]){
+                    nums[j] = nums[j] +nums[j+1];
+                    nums[j+1] = nums[j] -nums[j+1];
+                    nums[j] = nums[j] -nums[j+1];
+                }
+            }
+        }
+        for (int x:nums) {
+            System.out.print(x+" ");
+        }
+    }
+
+}
